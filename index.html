@@ -141,8 +141,7 @@ Docker Image</h1>
 </div><!-- fragment --><ul>
 <li>If you not on an architecture that is currently supported by the images on Docker Hub you can build the image appropriate for your system using the <a href="https://github.com/aDDM-Toolbox/ADDM.cpp/blob/main/Dockerfile">Dockerfile</a> provided in this repo. To do so navigate to the directory you cloned this repo to and run:</li>
 </ul>
-<div class="fragment"><div class="line"> shell</div>
-<div class="line">docker build -t {USER_NAME}/addm.cpp:{YOUR_TAG} -f ./Dockerfile .</div>
+<div class="fragment"><div class="line">docker build -t {USER_NAME}/addm.cpp:{YOUR_TAG} -f ./Dockerfile .</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Local Installation</h1>
 <h2><a class="anchor" id="autotoc_md5"></a>
@@ -168,8 +167,7 @@ Installation</h2>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Basic Usage</h1>
 <p>Both methods of the above methods will install the <code>libaddm.so</code> shared library as well as the corresponding header files. Although there are multiple header files corresponding to the <a class="el" href="classaDDM.html" title="Implementation of the attentional Drift Diffusion Model (aDDM).">aDDM</a> and <a class="el" href="classDDM.html" title="Implementation of the Drift Diffusion Model (DDM).">DDM</a> programs, simply adding <code>#include &lt;addm/cpp_toolbox.h&gt;</code> to a C++ program will include all necessary headers. A simple usage example is described below:</p>
-<p><code>main.cpp</code>: </p><div class="fragment"><div class="line"> ++</div>
-<div class="line"><span class="preprocessor">#include &lt;addm/cpp_toolbox.h&gt;</span></div>
+<p><code>main.cpp</code>: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;addm/cpp_toolbox.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="addm__mle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
