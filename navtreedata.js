@@ -25,40 +25,26 @@
 var NAVTREE =
 [
   [ "ADDM.cpp", "index.html", [
-    [ "Table of Contents", "index.html#autotoc_md13", null ],
-    [ "Getting Started", "index.html#autotoc_md14", null ],
-    [ "Docker Image", "index.html#autotoc_md15", null ],
-    [ "Local Installation", "index.html#autotoc_md16", [
-      [ "Requirements", "index.html#autotoc_md17", null ],
-      [ "Installation", "index.html#autotoc_md18", null ]
+    [ "Table of Contents", "index.html#autotoc_md1", null ],
+    [ "Getting Started", "index.html#autotoc_md2", null ],
+    [ "Docker Image", "index.html#autotoc_md3", null ],
+    [ "Local Installation", "index.html#autotoc_md4", [
+      [ "Requirements", "index.html#autotoc_md5", null ],
+      [ "Installation", "index.html#autotoc_md6", null ]
     ] ],
-    [ "Basic Usage", "index.html#autotoc_md19", null ],
-    [ "Tutorial", "index.html#autotoc_md20", null ],
-    [ "Testing", "index.html#autotoc_md21", null ],
-    [ "Modifying the Toolbox", "index.html#autotoc_md22", [
-      [ "Alternative Optimization Algorithms", "index.html#autotoc_md23", null ],
-      [ "Adding Parameters and Alternative Likelihood Calculators", "index.html#autotoc_md24", null ]
+    [ "Basic Usage", "index.html#autotoc_md7", null ],
+    [ "Tutorial", "index.html#autotoc_md8", null ],
+    [ "Testing", "index.html#autotoc_md9", null ],
+    [ "Modifying the Toolbox", "index.html#autotoc_md10", [
+      [ "Alternative Optimization Algorithms", "index.html#autotoc_md11", null ],
+      [ "Adding Parameters and Alternative Likelihood Calculators", "index.html#autotoc_md12", null ]
     ] ],
-    [ "Python Bindings", "index.html#autotoc_md25", [
-      [ "Optional: Python Syntax Highlighting", "index.html#autotoc_md26", null ]
+    [ "Python Bindings", "index.html#autotoc_md13", [
+      [ "Optional: Python Syntax Highlighting", "index.html#autotoc_md14", null ]
     ] ],
-    [ "Data Analysis Scripts", "index.html#autotoc_md27", null ],
-    [ "Authors", "index.html#autotoc_md28", null ],
-    [ "Acknowledgements", "index.html#autotoc_md29", null ],
-    [ "Doxygen Awesome", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html", [
-      [ "Motivation", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md1", null ],
-      [ "Features", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md2", null ],
-      [ "Examples", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md3", null ],
-      [ "Installation", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md4", [
-        [ "Git submodule", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md5", null ],
-        [ "npm/xpm dependency", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md6", null ],
-        [ "System-wide", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md7", null ],
-        [ "Choosing a layout", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md8", null ],
-        [ "Further installation instructions", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md9", null ]
-      ] ],
-      [ "Browser support", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md10", null ],
-      [ "Credits", "md_node__modules_2_0djothepro_2doxygen-awesome-css_2README.html#autotoc_md11", null ]
-    ] ],
+    [ "Data Analysis Scripts", "index.html#autotoc_md15", null ],
+    [ "Authors", "index.html#autotoc_md16", null ],
+    [ "Acknowledgements", "index.html#autotoc_md17", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

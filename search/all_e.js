@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['of_20contents_0',['Table of Contents',['../index.html#autotoc_md13',1,'']]],
+  ['of_20contents_0',['Table of Contents',['../index.html#autotoc_md1',1,'']]],
   ['operator_3c_1',['operator&lt;',['../classaDDM.html#aa91c58ed9dadaf2fdb4c17390a2c22b4',1,'aDDM::operator&lt;()'],['../classDDM.html#acd37ba5a2a2f6e45661df2516dabf267',1,'DDM::operator&lt;()']]],
   ['operator_3d_3d_2',['operator==',['../classaDDM.html#af0240e3943800fc7ac55157a67dd3fc5',1,'aDDM::operator==()'],['../classDDM.html#a71f6190810bcc363838261338263a01c',1,'DDM::operator==()']]],
   ['operator_5b_5d_3',['operator[]',['../classaDDM.html#a8ce15b067c6402ae3ac40239c0a6ef11',1,'aDDM']]],
   ['optimal_4',['optimal',['../structMLEinfo.html#a054f10abde01843cc1db0b07135edb0e',1,'MLEinfo']]],
-  ['optimization_20algorithms_5',['Alternative Optimization Algorithms',['../index.html#autotoc_md23',1,'']]],
-  ['optional_3a_20python_20syntax_20highlighting_6',['Optional: Python Syntax Highlighting',['../index.html#autotoc_md26',1,'']]],
+  ['optimization_20algorithms_5',['Alternative Optimization Algorithms',['../index.html#autotoc_md11',1,'']]],
+  ['optional_3a_20python_20syntax_20highlighting_6',['Optional: Python Syntax Highlighting',['../index.html#autotoc_md14',1,'']]],
   ['optionalparams_7',['optionalParams',['../classaDDM.html#a9197abe5f4e99d97cbc6c77cc28f3406',1,'aDDM']]]
 ];

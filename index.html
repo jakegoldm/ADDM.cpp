@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a> C++ implementation of the aDDM-Toolbox.</p>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 Table of Contents</h1>
 <ul>
 <li>Getting Started</li>
@@ -120,10 +120,10 @@ Table of Contents</h1>
 <li>Authors</li>
 <li>Acknowledgements</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Getting Started</h1>
 <p>The <a class="el" href="classaDDM.html" title="Implementation of the attentional Drift Diffusion Model (aDDM).">aDDM</a> Toolbox library for C++ can be cloned on the user's machine or run in a Docker container. <b>We recommend using the Docker image unless you are familiar with installing and compiling c++ packages</b>. For requirements for a local build of the ADDM.cpp, see the <b>Local Installation</b>. For instructions on the Docker installation, continue to the <b>Docker Image</b> section.</p>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Docker Image</h1>
 <p>To pull a Docker Image with ADDM.cpp installed, follow the steps below:</p>
 <ul>
@@ -143,9 +143,9 @@ Docker Image</h1>
 </ul>
 <div class="fragment"><div class="line"> shell</div>
 <div class="line">docker build -t {USER_NAME}/addm.cpp:{YOUR_TAG} -f ./Dockerfile .</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Local Installation</h1>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Requirements</h2>
 <p>The standard build of the ADDM.cpp assumes the Linux Ubuntu Distribution 22.04. This library requires g++ version 11.3.0, as well as three third-party C++ packages for thread pools, JSON processing, and statistical distributions:</p>
 <ul>
@@ -160,12 +160,12 @@ Requirements</h2>
 <div class="line">$ apt-get install libboost-math-dev libboost-math1.74-dev</div>
 </div><!-- fragment --><p>Be sure to clone the <a href="https://github.com/aDDM-Toolbox/ADDM.cpp">ADDM.cpp</a> library from Github if you haven't done so already.</p>
 <p><em>Note that the installation directory /usr/include/c++/11 may be modified to support newer versions of C++. In the event of a <b>Permission Denied</b> error, precede the above commands with <b>sudo</b>.</em></p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Installation</h2>
 <p>TThe ADDM.cpp library can then be built and installed in one step:</p>
 <div class="fragment"><div class="line">$ make install</div>
 </div><!-- fragment --><p><em>In the event of a <b>Permission Denied</b> error, precede the above command with <b>sudo</b>.</em></p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Basic Usage</h1>
 <p>Both methods of the above methods will install the <code>libaddm.so</code> shared library as well as the corresponding header files. Although there are multiple header files corresponding to the <a class="el" href="classaDDM.html" title="Implementation of the attentional Drift Diffusion Model (aDDM).">aDDM</a> and <a class="el" href="classDDM.html" title="Implementation of the Drift Diffusion Model (DDM).">DDM</a> programs, simply adding <code>#include &lt;addm/cpp_toolbox.h&gt;</code> to a C++ program will include all necessary headers. A simple usage example is described below:</p>
 <p><code>main.cpp</code>: </p><div class="fragment"><div class="line"> ++</div>
@@ -186,7 +186,7 @@ Basic Usage</h1>
 <div class="line">d: 0.005</div>
 <div class="line">sigma: 0.07</div>
 <div class="line">theta: 0.5</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
 Tutorial</h1>
 <p>In the <a href="data/">data</a> directory, we have included two test files to demonstrate how to use the toolbox. <a href="data/expdata.csv">expdata.csv</a> contains experimental data and <a href="data/fixations.csv">fixations.csv</a> contains the corresponding fixation data. A description of how to fit models corresponding to these subjects is located in <a href="sample/tutorial.cpp">tutorial.cpp</a>. An executable version of this script can be build using the <code>make run</code> target. The contents of the tutorial are listed below, but can be found <b>verbatim</b> in <a href="sample/tutorial.cpp">tutorial.cpp</a>.</p>
 <p><code><a class="el" href="tutorial_8cpp.html">sample/tutorial.cpp</a></code> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;addm/cpp_toolbox.h&gt;</span></div>
@@ -276,16 +276,16 @@ Tutorial</h1>
 <div class="line">2: d: 0.001 sigma: 0.0875 theta: 0.1</div>
 <div class="line">3: d: 0.001 sigma: 0.09 theta: 0.1</div>
 <div class="line">⋮</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md21"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
 Testing</h1>
 <p>A set of basic correctnesss tests are located in the <a href="tests/">tests</a> directory. These tests may be updated as more features are (potentially) added. Most importantly, these tests check that (1) the toolbox can be installed without error and (2) the installed toolbox performs trial simulation, likelihood estimation, and MLE correctly. To run the tests:</p>
 <div class="fragment"><div class="line">make test</div>
 <div class="line">bin/addm_test</div>
 </div><!-- fragment --><p>These tests are also configured to automaticcally run when pushed to GitHub. If you are contributing to the toolbox, be sure that your commit succesfully runs and passes the tests before attempting to merge.</p>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Modifying the Toolbox</h1>
 <p>Some users may want to modify this codebase for their own purposes. Below are some examples of what users may want to do and some tips on altering the code.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Alternative Optimization Algorithms</h2>
 <p>For some use-cases, MLE may not be optimal for model fitting. So, some users may want to change how the model fitting algorithm identifies the optimal parameters. The portion of the <code>fitModelMLE</code> function in the <a class="el" href="classaDDM.html" title="Implementation of the attentional Drift Diffusion Model (aDDM).">aDDM</a> class where MLE is actually performed is highlighted in the <code><a class="el" href="addm_8cpp.html">addm.cpp</a></code> file, but is also described below.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> minNLL = __DBL_MAX__; </div>
@@ -312,7 +312,7 @@ Alternative Optimization Algorithms</h2>
 <li><code>optimal</code>: The most optimal model to fit the given trials.</li>
 </ul>
 <p>When redesigning this segment of code, the minimum requirement is that some <code><a class="el" href="classaDDM.html" title="Implementation of the attentional Drift Diffusion Model (aDDM).">aDDM</a></code> object is selected as the <b>optimal</b> model. All other computational features can be determined by the user. The decision to compute the marginal posteriors or include code to add to the mappings can also be determined by the user if they inted on using that feature. The code should still compile and run if the <code>posteriors</code> and <code>allTrialLikelihoods</code> maps are left empty.</p>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Adding Parameters and Alternative Likelihood Calculators</h2>
 <p>Some users may want to fit models that have different parameters than those built into the standard model. Steps to use this toolbox with these modifications are described below. An example using a custom toolbox design is described in <a href="sample/custom.cpp">custom.cpp</a> as well. <br  />
 </p>
@@ -369,7 +369,7 @@ Adding Parameters and Alternative Likelihood Calculators</h2>
 </ol>
 <p>Note that C++ requires positional arguments, so there is no way to get around filling in all arguments up to the ones you intend to modify from the default. Some users may prefer to use Python instead of C++ to allow for keyword arguments, which may be filled in and changed from the default at the users will. See the Python Bindings section below for more details on getting started with Python Bindings.</p>
 <p>*See <a href="https://github.com/aDDM-Toolbox/ADDM.cpp/blob/main/include/addm.h"><code>addm.h</code></a> for complete documentation on model fitting arguments.*</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Python Bindings</h1>
 <p>Python bindings are also provided for users who prefer to work with a Python codebase over C++. The provided bindings are located in <a href="lib/bindings.cpp">lib/bindings.cpp</a>. Note that <a href="https://github.com/pybind/pybind11">pybind11</a> and Python version 3.10 (at a minimum) are <b>strict</b> prerequisites for installation and usage of the Python code. These are installed in the Docker image. For local installation on a Linux OS they can be installed with</p>
 <div class="fragment"><div class="line">apt-get install python3.10</div>
@@ -422,14 +422,14 @@ Python Bindings</h1>
 <li>Placed in the same directory as the Python executable.</li>
 <li>Placed in some directory in the <code>PYTHONPATH</code> environmental variable. (i.e. <code>usr/lib/python3.10</code> for Linux).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Optional: Python Syntax Highlighting</h2>
 <p>For users working in a user interface, such as Visual Studio Code, a Python stub is provided to facilitate features including syntax highlighting, type-hinting, auto-complete. Although the <code>addm_toolbox_cpp.pyi</code> stub is built-in, the file can be dynamically generated using the <a href="https://mypy.readthedocs.io/en/stable/stubgen.html">mypy stubgen</a> tool. The <code>mypy</code> module can be installed using:</p>
 <div class="fragment"><div class="line">pip install mypy</div>
 </div><!-- fragment --><p>For users who plan to modify the library for their own use and want the provided features, the stub file can be built as follows:</p>
 <div class="fragment"><div class="line">stubgen -m addm_toolbox_cpp -o .</div>
 </div><!-- fragment --><p> <em>Note that the <code>pybind11</code> shared library file should be built before running <code>stubgen</code>.</em></p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Data Analysis Scripts</h1>
 <p>A set of data analysis and visualization tools are provided in the <a href="analysis/">analysis</a> directory. Current provided scripts include:</p>
 <ul>
@@ -440,13 +440,13 @@ Data Analysis Scripts</h1>
 <li>Value Differences against Response Time Frequencies.</li>
 </ul>
 <p>See the individual file documentation for usage instructions.</p>
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Authors</h1>
 <ul>
 <li>Jake Goldman - <a href="#" onclick="location.href='mai'+'lto:'+'jgo'+'ld'+'man'+'@c'+'alt'+'ec'+'h.e'+'du'; return false;">jgold<span class="obfuscator">.nosp@m.</span>man@<span class="obfuscator">.nosp@m.</span>calte<span class="obfuscator">.nosp@m.</span>ch.e<span class="obfuscator">.nosp@m.</span>du</a>, <a href="https://github.com/jakegoldm">jakegoldm</a></li>
 <li>Zeynep Enkavi - <a href="#" onclick="location.href='mai'+'lto:'+'zen'+'ka'+'vi@'+'ca'+'lte'+'ch'+'.ed'+'u'; return false;">zenka<span class="obfuscator">.nosp@m.</span>vi@c<span class="obfuscator">.nosp@m.</span>altec<span class="obfuscator">.nosp@m.</span>h.ed<span class="obfuscator">.nosp@m.</span>u</a>, <a href="https://github.com/zenkavi">zenkavi</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md29"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Acknowledgements</h1>
 <p>This toolbox was developed as part of a resarch project in the <a href="http://www.rnl.caltech.edu/">Rangel Neuroeconomics Lab</a> at the California Institute of Technology. Special thanks to Antonio Rangel and Zeynep Enkavi for your help with this project. </p>
 </div></div><!-- PageDoc -->

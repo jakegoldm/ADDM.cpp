@@ -6,7 +6,7 @@ var searchData=
   ['rangetheta_3',['rangeTheta',['../addm__mle_8cpp.html#a8e93197b123db31603861ceea3e79273',1,'addm_mle.cpp']]],
   ['rdv_5ftime_2epy_4',['rdv_time.py',['../rdv__time_8py.html',1,'']]],
   ['rdvs_5',['RDVs',['../classDDMTrial.html#afe24a94d0425b430c2c1e4537091f35b',1,'DDMTrial']]],
-  ['readme_2emd_6',['readme.md',['../node__modules_2_0djothepro_2doxygen-awesome-css_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)']]],
-  ['requirements_7',['Requirements',['../index.html#autotoc_md17',1,'']]],
+  ['readme_2emd_6',['README.md',['../README_8md.html',1,'']]],
+  ['requirements_7',['Requirements',['../index.html#autotoc_md5',1,'']]],
   ['rt_8',['rt',['../structexpEntry.html#ad3e909fe83083bd306ad9a05ed28c9b4',1,'expEntry::rt'],['../classDDMTrial.html#a1fed499f6f800dcf08331b0f08d4570b',1,'DDMTrial::RT']]]
 ];
