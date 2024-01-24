@@ -8,5 +8,7 @@ var searchData=
   ['cpp_5',['ADDM.cpp',['../index.html',1,'']]],
   ['cpp_5ftoolbox_2eh_6',['cpp_toolbox.h',['../cpp__toolbox_8h.html',1,'']]],
   ['cumulativedensityfunction_7',['cumulativeDensityFunction',['../stats_8h.html#ab0c2fb4c0b02fabb15eeab9d6f73e5ab',1,'stats.h']]],
-  ['custom_2ecpp_8',['custom.cpp',['../custom_8cpp.html',1,'']]]
+  ['curr_8',['curr',['../namespacen__optimal.html#a3c59e338f3e5a69875bf3b865bd9db7e',1,'n_optimal']]],
+  ['currtime_9',['currTime',['../namespacen__optimal.html#af530cb0ce518f9f254abf1bfbe5ab755',1,'n_optimal']]],
+  ['custom_2ecpp_10',['custom.cpp',['../custom_8cpp.html',1,'']]]
 ];

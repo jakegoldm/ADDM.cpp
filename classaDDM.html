@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bff97cd2823b7e44e08af34351c6676" id="r_a2bff97cd2823b7e44e08af34351c6676"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classaDDMTrial.html">aDDMTrial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bff97cd2823b7e44e08af34351c6676">simulateTrial</a> (int valueLeft, int valueRight, <a class="el" href="classFixationData.html">FixationData</a> fixationData, int timeStep=10, int numFixDists=3, <a class="el" href="addm_8h.html#a04856a5a5f3cdb660bac28b172b8b600">fixDists</a> fixationDist={}, vector&lt; int &gt; timeBins={}, int seed=-1)</td></tr>
 <tr class="memdesc:a2bff97cd2823b7e44e08af34351c6676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate simulated fixations provided item values and empirical fixation data.  <br /></td></tr>
 <tr class="separator:a2bff97cd2823b7e44e08af34351c6676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64599f43b1c23278cd12ae69d7153ab" id="r_aa64599f43b1c23278cd12ae69d7153ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classaDDMTrial.html">aDDMTrial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa64599f43b1c23278cd12ae69d7153ab">simulateTrialAlternative</a> (int valueLeft, int valueRight, <a class="el" href="classFixationData.html">FixationData</a> fixationData, int timeStep=10, int numFixDists=3, <a class="el" href="addm_8h.html#a04856a5a5f3cdb660bac28b172b8b600">fixDists</a> fixationDist={}, vector&lt; int &gt; timeBins={}, int seed=-1)</td></tr>
+<tr class="memdesc:aa64599f43b1c23278cd12ae69d7153ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative simulator for users who want custom model.  <br /></td></tr>
+<tr class="separator:aa64599f43b1c23278cd12ae69d7153ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaecfe35063e8c519ad2746c59586d00d" id="r_aaecfe35063e8c519ad2746c59586d00d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProbabilityData.html">ProbabilityData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaecfe35063e8c519ad2746c59586d00d">computeParallelNLL</a> (vector&lt; <a class="el" href="classaDDMTrial.html">aDDMTrial</a> &gt; trials, int timeStep=10, float approxStateStep=0.1, bool useAlternative=false)</td></tr>
 <tr class="memdesc:aaecfe35063e8c519ad2746c59586d00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total Negative Log Likelihood (NLL) for a vector of aDDMTrials. Use CPU multithreading to maximize the number of blocks of trials that can have their respective NLLs computed in parallel.  <br /></td></tr>
 <tr class="separator:aaecfe35063e8c519ad2746c59586d00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -791,6 +794,59 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classaDDMTrial.html" title="Implementation of a single aDDMTrial object.">aDDMTrial</a> resulting from the simulation. </dd></dl>
+
+</div>
+</div>
+<a id="aa64599f43b1c23278cd12ae69d7153ab" name="aa64599f43b1c23278cd12ae69d7153ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64599f43b1c23278cd12ae69d7153ab">&#9670;&#160;</a></span>simulateTrialAlternative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classaDDMTrial.html">aDDMTrial</a> aDDM::simulateTrialAlternative </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valueLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valueRight</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFixationData.html">FixationData</a></td>          <td class="paramname"><span class="paramname"><em>fixationData</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeStep</em><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numFixDists</em><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="addm_8h.html#a04856a5a5f3cdb660bac28b172b8b600">fixDists</a></td>          <td class="paramname"><span class="paramname"><em>fixationDist</em><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>timeBins</em><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seed</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alternative simulator for users who want custom model. </p>
 
 </div>
 </div>
