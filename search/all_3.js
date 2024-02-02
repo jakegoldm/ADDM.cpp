@@ -1,7 +1,7 @@
 var searchData=
 [
   ['d_0',['d',['../classDDM.html#a15511d3cf0f7deb5de073dcdfd09bcc6',1,'DDM']]],
-  ['data_20analysis_20scripts_1',['Data Analysis Scripts',['../index.html#autotoc_md14',1,'']]],
+  ['data_20analysis_20scripts_1',['Data Analysis Scripts',['../index.html#autotoc_md15',1,'']]],
   ['ddm_2',['DDM',['../classDDM.html',1,'DDM'],['../classDDM.html#a2f83961c5d323afc64ed55489d4fb23d',1,'DDM::DDM(float d, float sigma, float barrier=1, unsigned int nonDecisionTime=0, float bias=0, float decay=0)'],['../classDDM.html#a5c65c29756565b1a6a9ca6605fa1c003',1,'DDM::DDM()']]],
   ['ddm_2ecpp_3',['ddm.cpp',['../ddm_8cpp.html',1,'']]],
   ['ddm_2eh_4',['ddm.h',['../ddm_8h.html',1,'']]],
