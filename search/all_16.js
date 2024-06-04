@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_5fvals_0',['x_vals',['../namespacen__optimal.html#a4ab15e480926d478c89148df48520b8b',1,'n_optimal']]]
+  ['y_5fvals_0',['y_vals',['../namespacen__optimal.html#af1eb3053f14153ea87d24763036c0b1d',1,'n_optimal']]]
 ];

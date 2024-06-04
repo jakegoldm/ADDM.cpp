@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['error_5fbound_0',['ERROR_BOUND',['../addm__test_8cpp.html#a6efdd600ad1d5fd41de71e139d0c58bd',1,'addm_test.cpp']]],
-  ['exp_5fdata_1',['EXP_DATA',['../addm__simulate_8cpp.html#a980505597a0a43e1ab56bcf65bda10a6',1,'EXP_DATA:&#160;addm_simulate.cpp'],['../addm__test_8cpp.html#a980505597a0a43e1ab56bcf65bda10a6',1,'EXP_DATA:&#160;addm_test.cpp']]]
+  ['d_0',['d',['../classDDM.html#a15511d3cf0f7deb5de073dcdfd09bcc6',1,'DDM']]],
+  ['decay_1',['decay',['../classDDM.html#aa5d70be71626890a4957eb5c59ba309d',1,'DDM']]],
+  ['df_2',['df',['../namespacen__optimal.html#a44a4d117b85a1d2fb1c13b6710c07b94',1,'n_optimal']]]
 ];
