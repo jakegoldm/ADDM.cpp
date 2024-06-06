@@ -80,17 +80,17 @@ int main() {
         std::string prefix = dataPairs[i].substr(7, dataPairs[i].find(".")-dataPairs[i].find("_")-1);
         for (const auto& [subjectID, trials] : data) {
             
-            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d1, range_s, range_theta, {0}, "basic", false);
+            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d1, range_s, range_theta, {0}, "thread", false, 1.0, 0, 10, 0.1);
             std::cout << subjectID << ": ";
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
             optimal_s.push_back(info.optimal.sigma);
             optimal_theta.push_back(info.optimal.theta);
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
         }
         std::string outputFileName = "./out/output_" + prefix + ".csv";
         saveToCSV(outputFileName, outputData);
@@ -108,14 +108,14 @@ int main() {
         std::string prefix = dataPairs2[i].substr(7, dataPairs2[i].find(".")-dataPairs2[i].find("_")-1);
 
         for (const auto& [subjectID, trials] : data) {
-            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d1, {optimal_s[j]}, {optimal_theta[j]}, {0}, "basic", false);
+            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d1, {optimal_s[j]}, {optimal_theta[j]}, {0}, "thread", false, 1.0, 0, 10, 0.1);
             std::cout << subjectID << ": ";
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
 
             j++;
         }
@@ -136,14 +136,14 @@ int main() {
 
         for (const auto& [subjectID, trials] : data) {
 
-            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d2, {optimal_s[j]}, {optimal_theta[j]}, {0}, "basic", false);
+            MLEinfo<aDDM> info = aDDM::fitModelMLE(trials, range_d2, {optimal_s[j]}, {optimal_theta[j]}, {0}, "thread", false, 1.0, 0, 10, 0.1);
             std::cout << subjectID << ": ";
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
 
             j++;
         }

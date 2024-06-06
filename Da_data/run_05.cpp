@@ -92,8 +92,8 @@ int main() {
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            std::cout << "eta: " << info.optimal.eta << std::endl;
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
         }
 
         // Save output to CSV with a specific filename

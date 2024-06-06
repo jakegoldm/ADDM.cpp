@@ -85,12 +85,12 @@ int main() {
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
             optimal_s.push_back(info.optimal.sigma);
             optimal_theta.push_back(info.optimal.theta);
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
         }
         std::string outputFileName = "/central/groups/rnl/jgoldman/out/output_" + prefix + ".csv";
         saveToCSV(outputFileName, outputData);
@@ -114,9 +114,9 @@ int main() {
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
 
             j++;
         }
@@ -142,9 +142,9 @@ int main() {
             std::cout << "d: " << info.optimal.d << " ";
             std::cout << "sigma: " << info.optimal.sigma << " ";
             std::cout << "theta: " << info.optimal.theta << " ";
-            std::cout << "k: " << info.optimal.k << std::endl;
+            std::cout << "eta: " << info.optimal.eta << std::endl;
 
-            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.k);
+            outputData.emplace_back(subjectID, info.optimal.d, info.optimal.sigma, info.optimal.theta, info.optimal.eta);
 
             j++;
         }

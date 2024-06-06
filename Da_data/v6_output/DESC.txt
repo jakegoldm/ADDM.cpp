@@ -1,0 +1,2 @@
+sigma and theta fixed to 0.05 and 0.5
+Values stored as floats instead of ints

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-for i in $(seq 1 5);
+for i in $(seq 1 6);
 do
     echo Version $i
     bash py_process.sh $i
