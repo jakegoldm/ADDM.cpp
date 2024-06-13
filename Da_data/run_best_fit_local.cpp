@@ -9,7 +9,7 @@ template<typename... Args>
 void saveToCSV(const std::string& filename, const std::vector<std::tuple<Args...>>& data) {
     std::ofstream file(filename);
     if (file.is_open()) {
-		file << "index, subj,d,s,theta,k\n";  // Updated header
+		file << "index, subj,d,s,theta,eta\n";  // Updated header
         
         for (const auto& row : data) {
             file << std::get<0>(row); // Writing subjectID
@@ -62,8 +62,8 @@ int main() {
 
     std::vector<float>optimal_s = {}; 
     std::vector<float>optimal_theta = {}; 
-    std::vector<float> range_d1 = generateRange(0.0001f, 0.01f, 0.0005f);
-    std::vector<float> range_d2 = generateRange(0.0001f, 0.025f, 0.0005f);
+    std::vector<float> range_d1 = generateRange(0.0001f, 0.01f, 0.0001f);
+    std::vector<float> range_d2 = generateRange(0.0001f, 0.025f, 0.0001f);
 
     for (size_t i = 0; i < dataPairs.size(); i += 2) {
         std::vector<float> range_theta = {0.5};

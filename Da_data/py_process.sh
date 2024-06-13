@@ -35,8 +35,8 @@ case $VERSION in
         ;;
     6) 
         SUFFIX=""
-        SS2=0.0005
-        SS05=0.0005
+        SS2=0.0001
+        SS05=0.0001
         LABEL_POS=0.0085
         ;;
     *)
