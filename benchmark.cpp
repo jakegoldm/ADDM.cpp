@@ -21,8 +21,8 @@ vector<int> timeSteps = {10, 5};
 vector<float> stateSteps = {0.1, 0.01}; 
 vector<int> trialCnts = {100, 500, 1000};
 
-string EXP_DATA = "data/expdata.csv";
-string FIX_DATA = "data/fixations.csv"; 
+string EXP_DATA = "/central/groups/rnl/jgoldman/ADDM.cpp/data/expdata.csv";
+string FIX_DATA = "/central/groups/rnl/jgoldman/ADDM.cpp/data/fixations.csv"; 
 
 
 int main() {
