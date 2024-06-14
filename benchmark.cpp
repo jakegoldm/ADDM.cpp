@@ -19,7 +19,7 @@ vector<float> test_t = {0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1};
 vector<float> vals = {0, 1, 2, 3};
 vector<int> timeSteps = {10, 5}; 
 vector<float> stateSteps = {0.1, 0.01}; 
-vector<int> trialCnts = {1, 5, 10};
+vector<int> trialCnts = {100, 500, 1000};
 
 string EXP_DATA = "/central/groups/rnl/jgoldman/ADDM.cpp/data/expdata.csv";
 string FIX_DATA = "/central/groups/rnl/jgoldman/ADDM.cpp/data/fixations.csv"; 
