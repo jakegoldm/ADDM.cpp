@@ -24,8 +24,8 @@ struct expEntry {
     int trial;
     int rt;
     int choice;
-    int item_left;
-    int item_right;
+    float item_left;
+    float item_right;
 };
 
 /**
