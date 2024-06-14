@@ -53,9 +53,9 @@ std::string fixDataFilename) {
         std::getline(ss, field, ',');
         entry.choice = std::stoi(field);
         std::getline(ss, field, ',');
-        entry.item_left = std::stoi(field);
+        entry.item_left = std::stof(field);
         std::getline(ss, field, ',');
-        entry.item_right = std::stoi(field);
+        entry.item_right = std::stof(field);
         expData.push_back(entry);
         if (IDtoEXP.count(entry.parcode)) {
             IDtoEXP.at(entry.parcode).push_back(entry);

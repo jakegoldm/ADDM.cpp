@@ -419,9 +419,9 @@ std::vector<DDMTrial> DDMTrial::loadTrialsFromCSV(std::string filename) {
         std::getline(ss, field, ',');
         RT = std::stoi(field);
         std::getline(ss, field, ',');
-        valueLeft = std::stoi(field);
+        valueLeft = std::stof(field);
         std::getline(ss, field, ',');
-        valueRight = std::stoi(field);
+        valueRight = std::stof(field);
         DDMTrial dt = DDMTrial(RT, choice, valueLeft, valueRight);
         trials.push_back(dt);
     }
